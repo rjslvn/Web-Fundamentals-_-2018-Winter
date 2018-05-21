@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Algorithm 1 tests</title>
+</head>
+<body>
+    <script type="text/javascript">
+    var x = [6,2,-5,7];
+    function MinMax(arr) {
+        var min = arr[0];
+        var indexmin = 0;
+        var max = arr[0];
+        var indexmax = 0;
+
+        for (var i = 1; i < arr.length; i++) {
+            if (arr[i] < min) {
+                min = arr[i];
+                indexmin = i;
+            } else if (arr[i] > max) {
+                max = arr[i];
+                indexmax = i;
+            }
+        }
+        return indexmax*indexmin;
+    }
+    console.log(MinMax(x));
+    </script>
+</body>
+
+</html>

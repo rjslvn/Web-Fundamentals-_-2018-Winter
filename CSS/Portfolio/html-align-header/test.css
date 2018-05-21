@@ -1,0 +1,32 @@
+*{
+    outline: solid 2px black;
+}
+
+
+#wrapper{
+    width: 950px;
+    background-color: silver;
+    margin: 0px auto;
+    padding: 10px;
+}
+#header{
+    height: 150px;
+    margin: 10px;
+    background-color: white;
+}
+
+* li span {
+    color: #6E88F7
+}
+
+h1 {
+    width: 40%;
+    text-align: left;
+    display: inline-block;
+}
+
+h2 {
+    width: 40%;
+    text-align: right;
+    display: inline-block;
+}
