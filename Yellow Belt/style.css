@@ -1,0 +1,197 @@
+/* Reset & Doc Settings */
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #1a1a1a;
+    
+}
+
+#wrapper {
+    width: 970px;
+    margin: 0px auto;
+    background: #1A1A1A;
+    box-shadow: 0px 0px 5px #000000;
+}
+
+/*                */
+/* Header Section */
+/*                */
+
+#logo {
+    padding: 20px;
+    vertical-align: middle;
+}
+
+#contact-us {
+    font-weight: bold;
+    color: #CDCCCC;
+    display: inline-block;
+    margin: 0px 0px 0px 500px;
+}
+
+/*                */
+/* Navigation Bar */
+/*                */
+
+#nav-bar {
+    padding: 10px 0px 10px 0px;
+    background: linear-gradient(to bottom, #525252, #424242, #252525);
+}
+
+#nav-bar ul {
+    border-right: 2px solid #525252;
+    margin: 0px 35px 0px 20px;
+}
+
+#nav-bar li {
+    padding: 5px 15px 5px 10px;
+    color: #A2A2A3;
+    font-size: 0.8em;
+    font-weight: bold;
+    border-right: 2px solid #525252;
+    display: inline-block;
+}
+
+#nav-bar ul li:first-child {
+    color: #D9D9D7;
+}
+
+#nav-bar ul li:last-child {
+    border: none;
+}
+
+
+/*                      */
+/* Content Icon Section */
+/*                      */
+
+#main-pic {
+    width: 970px;
+}
+
+#our-content {
+    padding: 30px 20px 40px 20px;
+    border-top: 5px solid #363636;
+}
+
+.content {
+    width: 165px;
+    padding: 0px 7px 0px 7px;
+    vertical-align: top;
+    display: inline-block;
+}
+
+p.content-description {
+    font-size: 0.8em;
+    padding: 4px 0px 4px 0px;
+    font-weight: lighter;
+    color: #CDCCCC;
+}
+
+h3.content-heading {
+    color: #DF792A;
+}
+
+
+/*                 */
+/* Buy Now Section */
+/*                 */
+
+#buy-now {
+    padding: 30px 20px 30px 20px;
+    background: url("images/carbon-bg.PNG");
+}
+
+#buy-now h2 {
+    font-weight: 400;
+}
+
+#buy-now-text {
+    width: 70%;
+    margin: 0px 125px 0px 20px;
+    color: #CDCCCC;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+#buy-now-text p {
+    padding: 10px 30px 10px 0px;
+    font-size: 0.8em;
+}
+
+#buy-now-button {
+    background: linear-gradient(to bottom, #F29C5B, #F08A3F, #EF802E);
+    color: white;
+    font-size: 1.2em;
+    width: 120px;
+    margin: 0px 0px 0px -20px;
+    padding: 8px 5px 8px 5px;
+    border-radius: 6px;
+    border: none;
+    display: inline-block;
+}
+
+/*                   */
+/* Portfolio Section */
+/*                   */
+
+#view-all {
+    font-style: italic;
+    font-size: 0.7em;
+    color: #DF792A;    
+    margin: 0px 0px 0px 720px;
+    font-weight: bolder;
+    text-decoration: none;
+    display: inline-block;
+}
+
+#portfolio-heading {
+    color: white;
+    margin: 30px 0px 20px 20px;
+    padding: 10px 10px 0px 10px;
+    font-size: 1.2em;
+    font-weight: 300;
+    display: inline-block;
+}
+
+#portfolio {
+    margin: 0px 0px 0px 10px;
+    background: #1A1A1A;
+}
+
+img.portfolio-images {
+    width: 200px;
+    height: 130px;
+    border: 5px solid #363636;
+}
+
+h4 {
+    color: #DF792A;
+    margin: 8px 0px 8px 0px;
+}
+
+.projects {
+    width: 20%;
+    padding: 0px 15px 15px 20px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+p.project-description {
+    width: 205px;
+    font-size: 0.70em;
+    font-weight: lighter;
+    color: #CDCCCC;
+}
+
+#back-to-top {
+    color: #606769;
+    font-size: 0.6em;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0px 0px 0px 870px;
+}

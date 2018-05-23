@@ -1,0 +1,58 @@
+* { 
+    margin: 0px;
+    padding: 0px;
+}
+
+#wrapper {
+    display: block;
+    background: #cdcdcd;
+    border-radius: 5px;
+    padding: 2%;
+    /* width: 50%;  */
+}
+
+.disp-format {
+    padding: 2%;
+    background: lightyellow;
+    border-radius: 5px;
+
+}
+
+
+@media only screen and (max-width: 480px) {
+    #wrapper {
+        min-width: 1em;
+    }
+    #phone {
+        display: block;
+    }
+
+    #desktop, #tablet {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 481px) {
+    #wrapper {
+        min-width: 1.5em;
+    }
+    #tablet {
+        display: block;
+    }
+
+    #phone, #desktop {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1023px) {
+    #wrapper {
+        min-width: 2em;
+    }
+    #desktop {
+        display: block;
+    }
+    #phone, #tablet {
+        display: none;
+    }
+}
