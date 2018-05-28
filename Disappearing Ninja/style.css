@@ -1,0 +1,37 @@
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+
+#wrapper {
+    width: 800px;
+    height: 400px;
+   /* display: inline-block; */
+}
+
+.image-holder {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+
+
+
+body {
+    display: inline;
+}
+
+/* img {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+} */
+
+/* #wrapper:nth-child(1n) {
+    content: " ";
+    width: 100px;
+    height: 100px;
+    display: inline-block; */
+/* } */
+
+

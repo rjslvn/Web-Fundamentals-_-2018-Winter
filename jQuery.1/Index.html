@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <script src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>      
+        <link rel="stylesheet" type="text/css" href="style.css"> 
+        <link rel="stylesheet" href="bower_components/css-ripple-effect/dist/ripple.min.css">
+        <script>
+            $(document).ready(function() {
+                $('#add').click(function() {
+                // for (var i=0; i<200; i++) {
+                    $('#append').append("test test");
+                // }
+                })
+            })
+        </script>
+    </head>
+    <body>
+        <!-- <div id="wrapper">            
+            <button id="class">Add Class</button>
+            <div class="jsections" id="addclass">
+                <h1>Add Class</h1>
+                <p>Click the button to add class 'red' to this paragraph.</p>
+            </div>
+            <button id="toggle">Slidetoggle</button>
+            <div class="jsections" id="slidetoggle">
+                <h1>Slidetoggle</h1>
+                <p>Click the button to slidetoggle a hidden image.</p>
+            </div>
+            <button id="add">Append</button>
+            <div class="jsections" id="append">
+                <h1>Append</h1>
+                <p  id="append">Click the button to append a new paragraph!</p>
+            </div>
+        </div> -->
+
+        <div id="wrapper">
+            <div id="main-block">
+                <h1>Chung's Book Club</h1>
+                <p>Thanks for coming to Chung's Book Club. Please fill out the registration form to join.</p>
+
+                <form action="">
+                    <p>First name: <input type="text" name="fname"></p>
+                    <p>Last name: <input type="text" name="lname"></p>
+                    <p>Email address: <input type="text" name="email"></p>
+                    <p>Phone number: <input type="phone" name="phone"></p>
+                    <p>Password: <input type="password" name="pw"></p>
+                    <p>Confirm Password: <input type="password" name="c_pw"></p><br>
+                    <input id="checkbox" type="checkbox" name="subaru" value="subaru"> 
+                    <button class="ripple">I'm Ready to Join</button>
+                </form>
+                <a href="/" class="ripple">Test</a>
+                <a href="/" class="ripple">test</a>
+                <a href="/" class="ripple">12323</a>
+                <a href="/" class="ripple"></a>
+                <a href="/" class="ripple"></a>
+            </div>
+            <div id="info">
+
+            </div>
+        </div>
+    </body>
+
+
+
+
+</html>

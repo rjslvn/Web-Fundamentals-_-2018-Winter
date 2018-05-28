@@ -3,55 +3,171 @@
     <head>
         <script src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>      
         <link rel="stylesheet" type="text/css" href="style.css"> 
+        <link rel="stylesheet" href="bower_components/css-ripple-effect/dist/ripple.min.css">
         <script>
             $(document).ready(function() {
-                $('#add').click(function() {
-                // for (var i=0; i<200; i++) {
-                    $('#append').append("test test");
-                // }
+                $('#addsomeclass').click(function() {
+                    $('#targetpara').addClass("red");
                 })
             })
+
+            $(document).ready(function() {
+                $('#add').click(function() {
+                    $('#append').append("This is a new Paragraph");
+                })
+            })
+            
+            $(document).ready(function() {
+                $('#toggle').click(function() {
+                    $('#slidetoggle').slideToggle();
+                })
+            })
+            $(document).ready(function() {
+                $('#hide').click(function() {
+                    $('#disappear').hide();
+                })
+            })
+            $(document).ready(function() {
+                $('#show').click(function() {
+                    $('#disappear').show();
+                })
+            })
+            $(document).ready(function() {
+                $('#slidedown').click(function() {
+                    $('#goup').slideDown();
+                })
+            })
+            $(document).ready(function() {
+                $('#slideup').click(function() {
+                    $('#goup').slideUp();
+                })
+            })
+            $(document).ready(function() {
+                $('#fadein').click(function() {
+                    $('#appear-slow').fadeIn();
+                })
+            })
+            $(document).ready(function() {
+                $('#fadeout').click(function() {
+                    $('#disappear-slow').fadeOut();
+                })
+            })
+            $(document).ready(function() {
+                $('#before').click(function() {
+                    console.log($('#isbefore').before());
+                })
+            })
+            $(document).ready(function() {
+                $('#after').click(function() {
+                    console.log($('#isafter').after());
+                })
+            })
+            $(document).ready(function() {
+                $('#html').click(function() {
+                    $('#hypertext').html("<h2>Hello!</h2>");
+                })
+            })
+            $(document).ready(function() {
+                $('#atrr').click(function() {
+                    console.log($('#attribute').attr('#addsomeclass'));
+                })
+            })
+            $(document).ready(function() {
+                $('#text').click(function() {
+                    $('#textit').text("hello");
+                })
+            })
+            $(document).ready(function() {
+                $('#data').click(function() {
+                    $( "datatime" ).data( "foo", 52 );
+                })
+            })
+           
         </script>
     </head>
     <body>
-        <!-- <div id="wrapper">            
-            <button id="class">Add Class</button>
+        <div id="wrapper">            
+            <button id="addsomeclass">Add Class</button>
             <div class="jsections" id="addclass">
                 <h1>Add Class</h1>
-                <p>Click the button to add class 'red' to this paragraph.</p>
-            </div>
+                <p id="targetpara">Click the button to add class 'red' to this paragraph.</p>
+            </div><br>
             <button id="toggle">Slidetoggle</button>
             <div class="jsections" id="slidetoggle">
                 <h1>Slidetoggle</h1>
                 <p>Click the button to slidetoggle a hidden image.</p>
-            </div>
+            </div><br>
             <button id="add">Append</button>
             <div class="jsections" id="append">
                 <h1>Append</h1>
-                <p  id="append">Click the button to append a new paragraph!</p>
+                <p>Click the button to append a new paragraph!</p>
             </div>
-        </div> -->
-
-        <div id="wrapper">
-            <div id=main-section>
-                <h1>@media queries</h1>
-                <p>CSS uses the @media rule to detect information about the device being used to access the website. For example, it can be used to detect the size of the device, its capabilities, and its orientation. For this course, we will be using it to detect the device size, but keep in mind that it is capable of much more.</p>
+            <button id="hide">Hide</button>
+            <div class="jsections" id="disappear">
+                <h1>Hide</h1>
+                <p>Click the button to hide this section.</p>
             </div>
-        </div>
-        <div id="desktop" class="disp-format">
-                <p>Desktop: Width greater than or equal to 1024px</p>
+            <button id="show">Show</button>
+            <div class="jsections" id="appear">
+                <h1>Show</h1>
+                <p>Click the button to show this section.</p>
             </div>
-            <div id="tablet" class="disp-format">
-                <p>Tablet: Width between 481px and 1023px</p>
+            <button id="slidedown">Slide Down</button>
+            <div class="jsections" id="godown">
+                <h1>Slide Down</h1>
+                <p>Click the button to slide this section down!</p>
             </div>
-            <div id="phone" class="disp-format">
-                <p>Phone: Width less than or equal to 480px</p>
+            <button id="slideup">Slide up</button>
+            <div class="jsections" id="goup">
+                <h1>Slide Up</h1>
+                <p>Click the button to slide this section up.</p>
             </div>
-
+            <button id="fadein">Fade In</button>
+            <div class="jsections" id="appear-slow">
+                <h1>Fade In</h1>
+                <p>Click the button to Fade In the paragraph!</p>
+            </div>
+            <button id="fadeout">Fade Out</button>
+            <div class="jsections" id="disappear-slow">
+                <h1>Fade Out</h1>
+                <p>Click the button to Fade Out the paragraph!</p>
+            </div>
+            <button id="before">Before</button>
+            <div class="jsections" id="isbefore">
+                <h1>Before</h1>
+                <p>Click the button to show the element before.</p>
+            </div>
+            <button id="after">After</button>
+            <div class="jsections" id="isafter">
+                <h1>After</h1>
+                <p>Click the button to show the element after.</p>
+            </div>
+            <button id="html">HTML</button>
+            <div class="jsections" id="hypertext">
+                <h1>HTML</h1>
+                <p>Click the button to append HTML to an elemnt</p>
+            </div>
+            <button id="attr">Attr</button>
+            <div class="jsections" id="attribute">
+                <h1>Attr</h1>
+                <p>Click the button to retrieve certain html from an element</p>
+            </div>
+            <button id="val">Val</button>
+            <div class="jsections" id="value">
+                <h1>Val</h1>
+                <p>Click the button to return the value of the element</p>
+            </div>
+            <button id="text">Text</button>
+            <div class="jsections" id="textit">
+                <h1>Text</h1>
+                <p>Click the button to add text to a specific element!</p>
+            </div>
+            <button id="data">Data</button>
+            <div class="jsections" id="datatime">
+                <h1>Data</h1>
+                <p>Click the button to ??!</p>
+            </div>
+        </div>       
         </div>
     </body>
-
-
-
-
 </html>
